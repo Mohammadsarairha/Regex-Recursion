@@ -36,15 +36,12 @@ Example: n = 4 ==> 3, n= 0 ==> 0, n = 3 ==> 2 */
 
 function fibonacci(n) {
     // Write you logic here.
-    if (n === 1) {
-        return 0;
+    if (n < 2) {
+        return n;
     }
-
-    if (n === 2) {
-        return 1;
+    else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
-
-    return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
 /* Optional 
