@@ -46,7 +46,12 @@ function imagesSearcher(text) {
     // Add your logic.
     let pattern = /[\w]+\.(jpg|jpeg|png)/g;
     arr = text.match(pattern);
-    return arr
+    if (arr === null) {
+        return [];
+    } else {
+        return arr
+    }
+
 }
 
 
